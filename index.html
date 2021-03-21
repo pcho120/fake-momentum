@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Something </title>
+    <meta charset = "utf-8" />
+    <link rel = "stylesheet" href = "index.css" />
+  </head>
+
+  <style>
+    .content {
+      max-width: 200px;
+      margin: auto;
+    }
+  </style>
+
+  <body>
+    <span class="weather" id = "js-weather"> </span>
+    <span class="location" id = "js-location"></span>
+    <div class = "content">
+      <div class = "js-clock">
+        <h1> 00:00 </h1>
+      </div>
+
+      <form class = "js-form form" >
+        <input type = "text" placeholder ="What is your name?" />
+      </form>
+      <h4 class = "js-greetings greetings"> </h4>   <!--placeholder자리에 타입된것을 같은 자리에 'Hello (text)'로 나타내는 자리-->
+    
+      <form id = "todoForm">
+        <input type="text" placeholder="Add Task"/>
+      </form>
+    </div>
+      
+    <div class = "pending">
+      <h2 style=font-size:30px>Pending</h2>
+      <ul id="js-pending"></ul>
+    </div>
+    <button id = "js-pendingClear">clear</button>
+    <div class = "finished">
+      <h3 style=font-size:30px>Finished</h3>
+      <ul id="js-finished"></ul>
+    </div>
+    <button id = "js-finishedClear">clear</button>
+    <div class = "content">
+      <button id = "js-changeUserName">Change name</button>
+    </div>
+    
+    <script src = "clock.js"> </script>
+    <script src = "gretting.js"> </script>
+    <script src = "todo.js"> </script>
+    <script src = "bg.js"> </script>
+    <script src = "weather.js"> </script>
+  <body>
+
+</html>
